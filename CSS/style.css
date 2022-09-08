@@ -1,0 +1,352 @@
+body, html {
+    height: 100%;
+    background-color: #cccbcb !important;
+    box-sizing: border-box;
+    /* background-image: linear-gradient(#045E21, #F29200, #BD1522) */
+
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* .grid{
+    display:grid;
+    place-items: center;
+} */
+
+nav{
+    background-color: #3f3f3ff3;
+
+}
+
+a{
+    font-family: Verdana, sans-serif;
+
+
+}
+
+a.footer-link{
+    text-decoration: none;
+    color:#afadad
+}
+
+a.header-link{
+    text-decoration: none;
+    color:#3f3f3f
+}
+
+a.footer-link:hover {
+    color: rgb(23, 224, 1);
+}
+
+a.download-link{
+    text-decoration: none;
+    color:#afadad;
+    size: .2em;
+}
+
+p{
+    font-family: Verdana, sans-serif;
+    color: #cbcccb;
+
+}
+
+h5{
+    font-family: Verdana, sans-serif;
+    color: #cccbcb;
+    
+}
+
+h1.flex{
+    text-align: center;
+    padding: .5em;
+    margin: 1em 1em;
+    font-size: large !important;
+    font-family: Verdana, sans-serif;
+    font-weight: bolder;
+    color:#383622f3;
+    letter-spacing: .3em;
+    
+}
+
+h1.header{
+    font-family: 'Holtwood One SC', serif;
+    font-size: 7vw;
+    margin:1em;
+    text-align: center; 
+    color: #3f3f3ff3;
+   
+
+}
+
+h1.footer-header{
+    font-family: 'Holtwood One SC', serif;
+    font-weight: bolder;
+    font-size: 3vw;
+    margin:1em;
+    margin-top: 0%;
+    text-align: center !important;    
+    color:#fff;
+}
+
+h1.footer-text{
+    font-size:xx-large !important;
+    font-weight: bolder;
+    text-align: center;
+
+}
+
+.w3-btn{
+    background-color:#cbcccb !important;
+    border-radius: 1em;
+    font-weight: bold;
+    width: 100%;
+    
+}
+
+.w3-btn:hover {
+    background-color:#a7a8a7 !important;
+    color: #000000;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+
+}
+
+.jumbotron {
+    display:flex !important;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.jumbo-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar-nav {
+    padding-left: 1em !important;
+    margin-bottom: 1em !important;
+    
+}
+
+.navbar-brand{
+    margin-right: 0 !important;
+    font-family: 'Holtwood One SC', serif;
+
+}
+
+.navbar-collapse{
+    flex-grow: 0 !important; 
+}
+
+.nav-icons{
+    font-size:1.2em;
+    text-align:left;
+    padding-left: 0;
+}
+
+.nav-icons:hover {
+    color: rgb(23, 224, 1);
+}
+
+div.nav-title{
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    align-self: flex-start;
+
+}
+
+div.nav-card {
+    min-height: 50%;
+    max-height: fit-content;
+    min-width:15%;
+    max-width:fit-content;
+    padding: 1em;
+    /* box-shadow: -1px -1px 20px 0px #ffffff; */
+    margin:1em;
+    
+    
+}
+
+div.card {
+    background: #cccbcb;
+    min-height: 350px;
+    max-height: fit-content;
+    padding: 1em;
+    box-shadow: 0px 0px 2px 0px #ffffff;
+    margin:1em;
+    /* width:100% !important; */
+    
+    
+}
+
+/* Accordion */
+.accordion {
+    background-color: #cccbcb;
+    color: #3f3f3ff3;
+    cursor: pointer;
+    padding: 18px;
+    align-self: center;
+    text-align: center;
+    outline: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    transition: 0.4s;
+    border-style:double;
+    border-color: rgb(23, 224, 1);
+    border-radius: .5em;
+    box-shadow: 2px 2px 5px 2px #000000, -1px -1px 2px 1px #ffffff;
+    margin:.2em;
+   
+}
+
+.active, .accordion:hover {
+background-color: #3f3f3ff3;
+color:#cccbcb;
+box-shadow: 2px 2px 5px 2px #ffffff, -1px -1px 2px 1px #000000;
+}
+
+.accordion:after {
+content: '\002B';
+font-weight: bolder;
+float: right;
+margin-left: 5px;
+}
+
+.active:after {
+content: "\2212";
+}
+
+.panel {
+padding:0em 2em;
+background-color:#3f3f3ff3;
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.2s ease-out;
+margin: 1em 0em;
+border-radius: .5em;
+}
+
+/* Form styling */
+.form-label{
+font-size:1.25em !important;
+font-weight: bold;
+color:#cccbcb;
+font-family: 'Pangolin', cursive;
+
+
+}
+
+.form-text{
+color:#38d707 !important;
+font-weight: 600;
+font-family: 'Ubuntu', sans-serif;
+
+}
+
+
+.footer {
+    display: flex;
+    justify-content:space-evenly;
+    background-color:#3f3f3ff3;
+    color: #cccbcb;
+    flex-direction: column;
+    padding:1em;
+    box-shadow: -1px -1px 20px 0px #ffffff;
+    margin-top: 2em;
+    
+}
+
+.footer-item {
+    background: #BCBFA3;
+    border-style:double;
+    border-color: #E8D3A9;
+    border-radius: .25em;
+    color: #6e6460;
+    box-shadow: 2px 2px 5px 2px #000000, -1px -1px 2px 1px #ffffff;
+    margin:1em;
+    
+}
+
+.footer-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+/* Make the page responsive */
+/* Medium Screens */
+@media screen and (min-width: 500px) {
+    
+   div.card{
+    width:44%;
+   }
+
+   .flex-container {
+        flex-flow: row wrap;
+
+    }
+
+
+}
+  
+/* Large Screens */
+@media screen and (min-width: 992px) {
+    
+    div.card{
+        width:44%;
+    }
+   
+    .flex-container {
+        justify-content: space-between;
+    }
+    
+    div.nav-title{
+        display:none !important;
+    }
+
+}
+
+@media screen and (max-width: 991px ) {
+    /* Removes jumbotron on small and medium screens */
+    .jumbotron, .header{
+        display:none !important;
+    }
+
+}
+
+/* Extra Large Screens */
+@media screen and (min-width: 1200px) {
+    
+    div.card{
+        width:25%;
+       
+    }
+}
+
+@media screen and (min-width: 700px) {
+
+    .footer-group{
+    flex-direction: row;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+
+    body {
+      background-color: #9f9f9f;
+    }
+}
